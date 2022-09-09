@@ -1,0 +1,32 @@
+.log-reg-container {
+    text-align: center;
+    padding: 1em;
+}
+
+.log-reg-form-container {
+    display: inline-block;
+    border: 1px solid #100F0F;
+    padding: 2em;
+    margin: 1em 0;
+    border-radius: 8px;
+}
+
+.inp {
+    margin-top: 1em;
+    height: 2em;
+    border: 1px solid #100F0F;
+    padding: 0 1em;
+}
+
+.sub-btn {
+    background-color: white;
+    padding: .3em 1em;
+    font-size: 1.5em;
+    border-radius: 8px;
+}
+
+input.sub-btn:hover {
+    background-color: #100F0F;
+    color: white;
+    transition: .3s;
+}

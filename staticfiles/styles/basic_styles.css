@@ -1,0 +1,105 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Roboto, sans-serif;
+}
+
+body {
+    padding-bottom: 2em;
+}
+
+.navbar {
+    height: 80px;
+    background: #100F0F;
+    color: white;
+    line-height: 80px;
+}
+
+.brand {
+    display: inline-block;
+    padding: 0 1.5em;
+}
+
+.menus {
+    display: inline-block;
+    float: right;
+    line-height: 80px;
+    padding-right: 2em;
+}
+
+.menus li {
+    display: inline-block;
+}
+
+.menus li a.nav-link:hover {
+    padding: 1em;
+    background: white;
+    border-radius: 5px;
+    color: #100F0F;
+    transition: .3s;
+}
+
+.nav-link {
+    text-transform: uppercase;
+    text-decoration: none;
+    color: white;
+    padding: 0 1em;
+}
+
+.main {
+    margin: 0 auto;
+    width: 50%;
+    text-align: center;
+}
+
+.post {
+    margin-top: 1em;
+    border: 1px solid #E2DCC8;
+    color: #100F0F;
+}
+
+.post-img {
+    width: 100%;
+}
+
+.post h1 {
+    padding: 8px;
+}
+
+.post p {
+    padding: 16px 8px;
+    background-color: #f3f1ee;
+}
+
+.read-more {
+    text-decoration: none;
+}
+
+.back {
+    margin-top: 1em;
+    text-align: center;
+}
+
+.go-back-link {
+    display: inline-block;
+    border: 1px solid #100F0F;
+    text-decoration: none;
+    color: #100F0F;
+    padding: .5em 1.5em;
+}
+
+.go-back-link:hover {
+    background-color: #100F0F;
+    color: #E2DCC8;
+}
+
+.go-back-link img {
+    display: inline-block;
+    height: 36px;
+    vertical-align: middle;
+}
+
+.go-back-text {
+    display: inline-block;
+    vertical-align: middle;
+}
