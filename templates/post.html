@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Posts{% endblock %}
+
+{% block link %}
+	<link rel="stylesheet" href="{% static 'styles/basic_styles.css' %}">
+{% endblock %}
+
+{% block main %}
+    <main class="main">
+        <div class="post">
+            <img src="https://i.pinimg.com/originals/f5/25/6f/f5256f22b9dea5d4eb80c41f91f87793.jpg" alt="post image" class="post-img">
+            <h1>Title</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias atque earum eum exercitationem ratione tenetur. Enim eveniet in inventore ipsum perspiciatis! A ab at illo pariatur placeat sapiente sint, totam?</p>
+        </div>
+        <div class="back">
+            <a href="#" class="go-back-link">
+                <span class="go-back-text">Go to back</span>
+            </a>
+        </div>
+    </main>
+{% endblock %}

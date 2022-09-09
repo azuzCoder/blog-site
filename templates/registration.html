@@ -1,0 +1,36 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Register{% endblock %}
+
+{% block link %}
+    <link rel="stylesheet" href="{% static 'styles/basic_styles.css' %}">
+    <link rel="stylesheet" href="{% static 'styles/login_registration.css' %}">
+{% endblock %}
+
+{% block main %}
+    <main class="main">
+        <div class="log-reg-form-container">
+            <h1>Register</h1>
+            <form action="" method="POST"> {% csrf_token %}
+                <input type="text" name="first_name" placeholder="First name" class="inp" required>
+                <p></p>
+                <input type="text" name="last_name" placeholder="Last name" class="inp" required>
+                <p></p>
+                <input type="text" name="username" placeholder="Username" class="inp" required>
+                <p></p>
+                <input type="email" name="email" placeholder="Email" class="inp" required>
+                <p></p>
+                <input type="password" name="password1" placeholder="Password" class="inp" required>
+                <p></p>
+                <input type="password" name="password2" placeholder="Password" class="inp" required>
+                <p></p>
+                <input type="submit" value="Register" class="inp sub-btn">
+            </form>
+
+{#            <form action="">#}
+{#                {{ form.as_p }}#}
+{#            </form>#}
+        </div>
+    </main>
+{% endblock %}

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}{% endblock %}</title>
+    {% block link %}{% endblock %}
+</head>
+<body>
+
+<header>
+    <nav class="navbar">
+        <h1 class="brand"><a href="{% url 'accounts:home' %}" class="nav-link">HELLO</a></h1>
+        <ul class="menus">
+            {% if user.is_authenticated %}
+                <li><a href="{% url 'accounts:logout' %}" class="nav-link">Log out</a></li>
+            {% else %}
+                <li><a href="{% url 'accounts:login' %}" class="nav-link">Log in</a></li>
+                <li><a href="{% url 'accounts:register' %}" class="nav-link">Register</a></li>
+            {% endif %}
+        </ul>
+    </nav>
+</header>
+
+{% block main %}{% endblock %}
+
+</body>
+</html>

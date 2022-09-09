@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}Log in{% endblock %}
+
+{% block link %}
+    <link rel="stylesheet" href="{% static 'styles/basic_styles.css' %}">
+    <link rel="stylesheet" href="{% static 'styles/login_registration.css' %}">
+{% endblock %}
+
+{% block main %}
+    <main class="main">
+        <div class="log-reg-form-container">
+            <h1>Login</h1>
+            <form action="" method="POST">{% csrf_token %}
+                <input type="text" name="username" placeholder="Username" class="inp" required>
+                <p></p>
+                <input type="password" name="password" placeholder="Password" class="inp" required>
+                <p></p>
+                <input type="submit" value="Login" class="inp sub-btn">
+            </form>
+{#            <form action="" method="post">#}
+{#                {{ form.as_p }}#}
+{#            </form>#}
+        </div>
+    </main>
+{% endblock %}
